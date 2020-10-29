@@ -1,0 +1,45 @@
+License this under LGPL.
+
+
+Ein File mit Uebungen erstellen.
+Ein File mit Loesungen erstellen.
+Ein File mit Anweisungen fuer User erstellen.
+Wiki erstellen und dort Dinge erklaeren.
+
+
+The idea is that a user forks this repo and works in their fork - otherwise
+the main repo would get cluttered.
+
+Uebungen:
+
+
+cherry-pick
+	1. Branch A and B, pick commit x from B
+	2. pick commits x-y from B
+
+second-worktree
+	A student wants you to look at their code, but you are in the middle
+	of development and don't want to commit/stash change branch etc.
+	You develop in two branches at the same time and don't want to do
+	the commit/stash etc. dance every time.
+	1. Create a second worktree
+
+interaktive rebase
+	1. delete commit (internal doc leaked)
+	2. split commit (internal doc2 leaked)
+
+
+Hooks
+	I need to explain how hooks work and what they are good for.
+	Example hook: Code indentation
+	1. Install the hook, modify the file "blabla.c" and try to commit it.
+
+Filter
+	I need to explain how filters work and what they are good for.
+	Example filter: gitignore
+	1. Install filter and write code in blabla.c. Additionally, write
+		some output and comment it with // gitignore
+
+
+bisect
+	I need to understand what git bisect does and think of a use case
