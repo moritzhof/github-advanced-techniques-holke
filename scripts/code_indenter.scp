@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#
+# This is a small script to indent .c and .h code files.
+# Its sole purpose is to serve as a test script for our demonstration
+# of git hooks.
+#
+# Usage: code_indenter.scp [INPUT-FILES]
+# 
+
+
+# Check for GNU indent
+INDENT=`which indent 2> /dev/null`
+if test -z "$INDENT"
+then
+	# Could not find indent. Exit with error message.
+	echo "Error: Could not find indent." >> /dev/stderr
+	exit 1
+fi
+
+
+# Found indent, we can now indent our input files.
+INDENT_OPTIONS="-gnu"
+
+$INDENT $INDENT_OPTIONS $@
