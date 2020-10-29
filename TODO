@@ -25,6 +25,7 @@ second-worktree
 	1. Create a second worktree
 
 interaktive rebase
+	Warn the users about the dangers of rewriting history!
 	1. delete commit (internal doc leaked)
 	2. split commit (internal doc2 leaked)
 
